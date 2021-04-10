@@ -1,0 +1,66 @@
+# general
+gpu: "0" # "0,1,2,3"
+cpu_workers: 4
+seed_num: 2021
+title: "TGIM TRAINING"
+save: True
+overfit : False
+
+# path
+data_root: '../data/birds'
+save_path: '../save/'
+checkpoint: 'checkpoints'
+previous_weight: ""
+
+# Transformer
+bert_pretrain: "bert-base-uncased"
+
+
+
+# for Network
+img_size: 256
+crop_size: 256
+max_len: 30
+sent_embedding: "cls" # "cls" or "mean"
+captions_per_img: 10
+w_dim: 768
+z_dim: 128
+D_sent_fc: True
+eps: 0.0000001
+generator_encoder: "tagan" # ['tagan']
+generator_decoder: "tagan" # [tagan]
+upblock: "upsample" # ['upsample', 'deconv']
+
+
+# optimizer
+num_epoch: 600 # # of iter at starting learning rate. This is NOT the total #epochs. Totla #epochs is niter + niter_decay
+save_step: 10000
+summary_step: 10
+
+niter: 10000
+niter_decay: 0.5 # # of iter to linearly decay learning rate to zero
+batch_size: 64
+optimizer: adam
+beta1: 0.5
+beta2: 0.999
+lr: 0.0002 # 5e-5
+
+lambda_cond_loss: 10
+lambda_rec: 0.2
+lambda_cycle: 0.2
+lambda_vgg: 1
+lambda_fm: 1
+lambda_gp: 1
+lambda_attn : 1
+
+
+# experiments
+gan_mode: 'original'
+iter_G: 1
+iter_D: 1
+lr_decay: True
+ATTNloss: False
+CYCLEloss: False
+TEXTtune: Fasle
+
+

@@ -1,0 +1,12 @@
+dill==0.3.3
+easydict==1.9
+nltk==3.5
+pycocotools==2.0.2
+PyYAML==5.4.1
+setproctitle==1.2.2
+tensorboard==2.4.1
+tensorboard-logger==0.1.0
+tensorboard-plugin-wit==1.8.0
+torch==1.6.0
+torchvision==0.7.0
+tqdm==4.56.2
