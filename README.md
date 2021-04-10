@@ -1,5 +1,9 @@
 Text Guided Image Manipulation  <img src="https://pytorch.org/assets/images/logo-dark.svg" width = "90" align=center />
-    - This project is under working: TaGAN + Transformer + auxiliary Loss
+
+###### This project is under working: TaGAN + Transformer + auxiliary Loss
+
+
+    
 Setup and Dependencies
 ----------------------
 
